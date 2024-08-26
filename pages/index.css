@@ -1,0 +1,231 @@
+/* Page Wrapper */
+.page {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0 20px;
+  position: relative; /* Added for centering the header */
+  overflow: hidden; /* Prevents overflow of elements */
+}
+
+/* Header */
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 30px 80px 40px;
+  position: relative;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  align-items: flex-start; /* Aligns all content to the left */
+  overflow: hidden; /* Prevents overflow of elements */
+}
+
+/* Navigation Menu */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px; /* Added to create space between the nav and logo */
+}
+
+/* Uncomment if needed later
+.nav__left {
+  flex: 1; /* Allows the logo container to take up available space
+} */
+
+/* Navigation Menu */
+.nav__logo {
+  height: 40px; /* Adjust height to fit the line */
+  width: auto; /* Maintain aspect ratio */
+  filter: brightness(0) invert(0); /* Changes the logo color to black */
+}
+
+.nav__links {
+  display: flex;
+  gap: 30px; /* Space between navigation links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px; /* Ensures consistency across text elements */
+}
+
+.nav__link:hover {
+  color: #d35722; /* Hover effect color */
+}
+
+/* Header Content */
+.header__text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
+  max-width: 600px; /* Restrict the width to align with the image */
+  z-index: 1; /* Ensures text is above the background shape */
+}
+
+.header__title {
+  font-size: 66px;
+  line-height: 76px;
+  font-weight: 500;
+  color: #000;
+  margin: 0; /* Remove margin to align text with the image */
+}
+
+.header__highlight {
+  color: #0070f3; /* Blue color for the "Specialty coffee" highlight */
+  font-style: italic; /* Italic style for emphasis */
+}
+
+.header__description {
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+  margin: 32px 0 0;
+}
+
+/* Header Illustration */
+.header__image {
+  position: absolute;
+  max-width: 550px;
+  top: 148px;
+  right: 48px;
+  z-index: 2; /* Ensures the image is above other elements */
+}
+
+/*
+Uncomment if needed later
+.header__background {
+  position: absolute;
+  top: 0;
+  left: -150px; /* Adjust to position the circle correctly */
+/*width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(240, 240, 240, 0.5),
+    transparent
+  );
+  z-index: 0; /* Ensures the background shape is behind other elements
+} */
+
+/* Header Footer (Business Info) */
+.header__footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid #ddd; /* Added top border for separation */
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__hours {
+  color: #555;
+  margin: 0;
+  font-size: 14px;
+}
+
+.header__address {
+  color: #838383;
+  margin: 10px 0 0;
+  font-size: 14px;
+}
+
+/* Main Sections */
+.recipes,
+.reservation,
+.menu,
+.about {
+  padding: 80px 40px; /* Reduced padding for better spacing */
+  text-align: center;
+}
+
+.recipes__title,
+.reservation__title,
+.menu__title,
+.about__title {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 60px 80px;
+  background-color: #1f1f1f;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer__column {
+  flex: 1;
+}
+
+.footer__column-heading {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__list-item {
+  margin-bottom: 8px;
+}
+
+.footer__column-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__column-link:hover {
+  color: #c1c1c1;
+}
+
+/* Uncomment if needed later
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+} */
+
+/* Footer Copyright */
+.footer__copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #838383;
+}
