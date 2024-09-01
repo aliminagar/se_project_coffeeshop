@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Language attribute set to English -->
   <head>
     <meta charset="UTF-8" />
+    <!-- Character set defined as UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Viewport settings for responsive design -->
     <title>Coffee Shop</title>
     <meta name="author" content="Alireza Minagar" />
+    <!-- Author metadata -->
     <meta
       name="description"
       content="Triple Peaks Library coffee shop webpage offering specialty coffee, recipes, and table reservations."
     />
+    <!-- Description metadata -->
     <meta
       name="keywords"
       content="Coffee, Triple Peaks Library, Recipes, Book a Table, Menu, Coffee Shop"
     />
+    <!-- Keywords metadata -->
 
     <!-- Preconnect for Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,30 +39,32 @@
     <div class="page">
       <!-- Header Section Starts Here -->
       <header class="header">
-        <!-- Background Shape -->
-        <div class="header__background"></div>
-
-        <!-- Navigation Menu -->
         <nav class="nav">
-          <div class="nav__left">
-            <img
-              src="./images/logo_coffeeshop_light.svg"
-              alt="Triple Espresso Logo"
-              class="nav__logo"
-            />
-          </div>
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Coffeeshop Logo"
+            class="nav__logo"
+          />
           <ul class="nav__links">
-            <li><a class="nav__link" href="#recipes">Recipes</a></li>
-            <li><a class="nav__link" href="#book-table">Book a table</a></li>
-            <li><a class="nav__link" href="#menu">Menu</a></li>
-            <li><a class="nav__link" href="#contacts">Contacts</a></li>
+            <li>
+              <a href="#recipes" class="nav__link">Recipes</a>
+            </li>
+            <li>
+              <a href="#book-table" class="nav__link">Book a table</a>
+            </li>
+            <li>
+              <a href="#menu" class="nav__link">Menu</a>
+            </li>
+            <li>
+              <a href="#contacts" class="nav__link">Contacts</a>
+            </li>
           </ul>
         </nav>
 
         <!-- Main Title and Description -->
         <div class="header__text">
           <h1 class="header__title">
-            <span class="header__highlight">Specialty coffee</span> in the
+            <span class="header__span-accent">Specialty coffee</span> in the
             Triple Peaks Library
           </h1>
           <p class="header__description">
@@ -68,46 +76,82 @@
         <!-- Illustration -->
         <img
           src="./images/inside_coffee_shop.png"
-          alt="Illustration 'Inside the library'"
+          alt="Coffesshop illustration 'Inside the library'"
           class="header__image"
         />
 
         <!-- Business Information -->
         <div class="header__footer">
-          <div class="header__info">
-            <p class="header__hours">
-              Hours: <br />
-              Monday – Friday (10:00 – 18:00) <br />
-              Saturday – Sunday (11:00 – 18:00)
-            </p>
-            <p class="header__address">
-              200 Success Avenue, The Town of Triple Peaks
-            </p>
+          <div>
+            <!-- This div is acting as the container for hours -->
+            <p class="header__paragraph">Hours:</p>
+            <p class="header__paragraph">Monday – Friday (10:00 – 18:00)</p>
+            <p class="header__paragraph">Saturday – Sunday (11:00 – 18:00)</p>
           </div>
+          <p class="header__paragraph">
+            200 Success Avenue, The Town of Triple Peaks
+          </p>
         </div>
       </header>
       <!-- Header Section Ends Here -->
 
-      <!-- Main Content Sections -->
+      <!-- Main Content Starts Here -->
       <main class="content">
         <!-- Recipes Section -->
         <section id="recipes" class="recipes">
           <h2 class="recipes__title">Recipes</h2>
-          <!-- Commented out additional content -->
-          <!-- Add more content here based on your requirements -->
+          <p class="recipes__subtitle">
+            Check out some recipes we've collected for your home-brewing
+            convenience:
+          </p>
+          <!-- Video list here -->
+          <ul class="recipes__videos">
+            <li>
+              <iframe
+                width="480"
+                height="273"
+                src="https://www.youtube.com/embed/j6VlT_jUVPc?si=L4BExKkkjiDCEaR7&modestbranding=1&showinfo=0&rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                class="recipes__iframe"
+              ></iframe>
+              <div class="recipes__video_caption">
+                <span class="caption-text">Aeropress recipe</span>
+                <span class="caption-time">~5 min</span>
+              </div>
+            </li>
+            <li>
+              <iframe
+                width="480"
+                height="273"
+                src="https://www.youtube.com/embed/st571DYYTR8?si=q23FLK8NmeoNbw6J&modestbranding=1&showinfo=0&rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                class="recipes__iframe"
+              ></iframe>
+              <div class="recipes__video_caption">
+                <span class="caption-text">French press recipe</span>
+                <span class="caption-time">~15 min</span>
+              </div>
+            </li>
+          </ul>
         </section>
 
         <!-- Reservation Section -->
         <section id="book-table" class="reservation">
           <h2 class="reservation__title">Book a table</h2>
-          <!-- Commented out additional content -->
           <!-- Add form or content for booking a table here -->
         </section>
 
         <!-- Menu Section -->
         <section id="menu" class="menu">
           <h2 class="menu__title">Menu</h2>
-          <!-- Commented out additional content -->
           <!-- Add menu items here -->
         </section>
 
@@ -115,11 +159,11 @@
         <section id="about" class="about">
           <h2 class="about__title">About the coffee shop</h2>
           <p class="about__text">
-            <!-- Commented out additional content -->
             <!-- Add content about the coffee shop here -->
           </p>
         </section>
       </main>
+      <!-- Main Content Ends Here -->
 
       <!-- Footer Section -->
       <footer class="footer" id="contacts">

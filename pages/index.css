@@ -7,7 +7,7 @@
   font-size: 16px;
   line-height: 20px;
   padding: 0 20px;
-  position: relative; /* Added for centering the header */
+  position: relative; /* Centering the header */
   overflow: hidden; /* Prevents overflow of elements */
 }
 
@@ -15,54 +15,129 @@
 .header {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 800px;
   padding: 30px 80px 40px;
   position: relative;
   box-sizing: border-box;
   justify-content: space-between;
   background-color: #f9f9f9;
-  align-items: flex-start; /* Aligns all content to the left */
+  background-image: url(../images/background_header.svg);
+  background-size: cover;
+  align-items: stretch; /* Aligns content to stretch across the width */
   overflow: hidden; /* Prevents overflow of elements */
 }
 
+.header__image {
+  position: absolute;
+  top: 124px;
+  right: 5px;
+  width: 646px;
+  height: 568px;
+}
 /* Navigation Menu */
+/* Highlighted Text "Specialty coffee" */
+.header__highlight {
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 72px;
+  color: #3f96f3;
+}
+
+/* Description Text */
+.header__description {
+  font-family: "Noto Serif", "Time New Roman", serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 28px;
+  max-width: 683;
+}
+/* Main Heading "in the Triple Peaks Library" */
+.header__title {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -0.6px;
+  margin: 183px 0 0;
+  max-width: 729px;
+}
+
+.header__span-accent {
+  color: #3f96f3;
+  display: block; /* Optional: if you want it to take up its line */
+  font-style: italic; /* Apply italic style to the text */
+  font-family: "Noto Serif", "Times New Roman", serif; /* Ensure the correct font family */
+  font-weight: 500; /* Apply the same font weight */
+  font-size: 72px; /* Ensure the same font size */
+  line-height: 72px; /* Ensure the same line height */
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: 20px; /* Added to create space between the nav and logo */
+  margin: 20px 0 0; /* Creates space between the nav and logo */
+  padding: 0 80px; /* Added padding to align with header padding */
+  box-sizing: border-box;
 }
 
-/* Uncomment if needed later
-.nav__left {
-  flex: 1; /* Allows the logo container to take up available space
-} */
-
-/* Navigation Menu */
+/* Navigation Logo */
 .nav__logo {
-  height: 40px; /* Adjust height to fit the line */
-  width: auto; /* Maintain aspect ratio */
-  filter: brightness(0) invert(0); /* Changes the logo color to black */
+  display: flex;
+  left: -50px; /* Existing property, kept unchanged */
+  /* Additional properties to match the design */
+  height: 39px; /* Sets the height as per the design */
+  width: 105px; /* Sets the width as per the design */
+  margin-top: 30px; /* Adds space above the logo */
+  margin-left: 30px; /* Adds space to the left of the logo */
+  filter: brightness(0) invert(0); /* Ensures the logo color is black */
 }
 
+/* Navigation Links */
 .nav__links {
   display: flex;
-  gap: 30px; /* Space between navigation links */
-  list-style: none;
+  gap: 20px; /* Space between navigation links */
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
+/* Navigation Links */
 .nav__link {
-  color: #000;
-  text-decoration: none;
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 500;
-  font-size: 16px; /* Ensures consistency across text elements */
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .nav__link:hover {
   color: #d35722; /* Hover effect color */
+}
+
+/* Styles for the entire navigation bar */
+.nav-menu {
+  display: flex; /* Align items horizontally */
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center; /* Vertically center the items */
+  padding: 30px 8px; /* 30px top padding, 8px right padding */
+  height: 124px; /* Total height to match the design */
+  background-color: #f8f9fa; /* Optional: background color */
+}
+
+/* Styles for each individual navigation item */
+.nav-menu-item {
+  margin-right: 20px; /* Space between each item */
+  list-style-type: none; /* Remove bullet points */
+}
+
+/* Optional: Style anchor tags inside navigation items */
+.nav-menu-item a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set color */
+  font-weight: bold; /* Optional: make the text bold */
 }
 
 /* Header Content */
@@ -75,84 +150,113 @@
   margin-top: 40px;
   max-width: 600px; /* Restrict the width to align with the image */
   z-index: 1; /* Ensures text is above the background shape */
-}
-
-.header__title {
-  font-size: 66px;
-  line-height: 76px;
-  font-weight: 500;
-  color: #000;
-  margin: 0; /* Remove margin to align text with the image */
-}
-
-.header__highlight {
-  color: #0070f3; /* Blue color for the "Specialty coffee" highlight */
-  font-style: italic; /* Italic style for emphasis */
-}
-
-.header__description {
-  font-size: 20px;
-  line-height: 30px;
-  color: #000;
-  margin: 32px 0 0;
+  padding-left: 80px; /* Aligns with padding on nav */
 }
 
 /* Header Illustration */
 .header__image {
   position: absolute;
   max-width: 550px;
-  top: 148px;
+  top: 50%; /* Centers the image vertically */
   right: 48px;
+  transform: translateY(-50%); /* Centers the image relative to the top */
   z-index: 2; /* Ensures the image is above other elements */
 }
 
-/*
-Uncomment if needed later
-.header__background {
-  position: absolute;
-  top: 0;
-  left: -150px; /* Adjust to position the circle correctly */
-/*width: 100%;
-  height: 100%;
-  background: radial-gradient(
-    circle at 50% 50%,
-    rgba(240, 240, 240, 0.5),
-    transparent
-  );
-  z-index: 0; /* Ensures the background shape is behind other elements
-} */
-
-/* Header Footer (Business Info) */
 .header__footer {
-  margin-top: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding-top: 20px;
-  border-top: 1px solid #ddd; /* Added top border for separation */
-  background-color: #fff;
-  box-sizing: border-box;
+  display: flex; /* Enables flexbox layout */
+  justify-content: space-between; /* Adjust as necessary */
+  align-items: flex-start; /* Aligns items to the top */
+  padding-top: 20px; /* Adds space above the footer */
+  box-sizing: border-box; /* Includes padding in width calculations */
+  margin-left: 80px; /* Adjust this value to match the alignment of the text above */
+}
+/* Header Address */
+.header__address {
+  margin-left: auto; /* Pushes the address to the right side */
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: left;
+  color: #838383;
+}
+
+.header__paragraph {
+  margin: 0; /* Ensures no extra margin is added */
+  padding: 0; /* Ensures no extra padding is added */
+  font-size: 14px; /* Adjust font size if needed */
+  line-height: 1.2; /* Adjust line height for closer spacing */
+}
+/* Header Hours */
+.header__hours {
+  margin: 0; /* Removes any default margin */
+  padding: 0; /* Ensures no additional padding */
+  font-size: 14px; /* Font size to match the design */
+  line-height: 1.2; /* Tightens line spacing to make lines closer together */
+  text-align: left; /* Aligns text within its container to the left */
+  color: #555; /* Sets color for the hours text */
+}
+
+.header__hours p {
+  margin: 0; /* Removes any default margin */
+  padding: 0; /* Ensures no additional padding */
 }
 
 .header__info {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between; /* Aligns the "Hours" and "Address" sections */
+  align-items: flex-start; /* Aligns text at the top */
+  margin-top: auto; /* Pushes the info section to the bottom of its parent container */
+  width: 100%; /* Full width of the container */
+  padding-top: 20px; /* Adds space above the info */
+  box-sizing: border-box; /* Includes padding in width calculations */
 }
-
-.header__hours {
-  color: #555;
-  margin: 0;
-  font-size: 14px;
-}
-
-.header__address {
-  color: #838383;
-  margin: 10px 0 0;
-  font-size: 14px;
-}
-
 /* Main Sections */
+.recipes {
+  color: #ffffff; /* Text color set to white */
+  background-color: #0a2750;
+  padding: 100px 80px 215px; /* Background color set to dark blue */
+  text-align: left; /* Align text to the left */
+}
+.recipes__videos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recepies__video.caption {
+  display: flex;
+  justify-content: space-between;
+}
+/* Title Styling */
+.recipes__title {
+  font-family: "Inter", Arial, Helvetica, sans-serif; /* Sets the correct font family */
+  font-style: normal; /* Ensures normal style */
+  font-weight: 500; /* Medium weight */
+  font-size: 44px; /* Sets the font size to 44px */
+  line-height: 52px; /* Line height of 52px */
+  margin: 0 0 24px; /* Margin-bottom 24px, no margin top */
+  max-width: 580px; /* Ensuring the width does not exceed the given limit */
+  text-align: left; /* Aligns text to the left */
+}
+
+/* Subtitle Styling */
+.recipes__subtitle {
+  font-family: "Noto Serif", serif; /* Sets the correct font family */
+  font-style: normal; /* Normal style */
+  font-weight: normal; /* Normal weight */
+  font-size: 20px; /* Sets the font size to 20px */
+  line-height: 30px; /* Line height of 30px */
+  max-width: 580px; /* Ensures the subtitle doesn't exceed this width */
+  margin: 0 0 80px; /* Margin-bottom 80px */
+  text-align: left; /* Aligns text to the left */
+}
 .recipes,
 .reservation,
 .menu,
@@ -170,6 +274,31 @@ Uncomment if needed later
   margin-bottom: 20px;
 }
 
+.recepies__iframe {
+  width: 480px;
+  height: 273px;
+}
+.recipes__video_caption {
+  display: flex; /* Enables Flexbox layout */
+  justify-content: space-between; /* Aligns the caption text and duration on opposite sides */
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff; /* Keeps the text color white */
+  margin-top: 24px; /* Adds spacing above the caption */
+  width: 100%; /* Matches the video width */
+  max-width: 480px; /* Aligns with video width */
+}
+
+.caption-text {
+  text-align: left; /* Aligns the recipe text to the left */
+}
+
+.caption-time {
+  text-align: right; /* Aligns the duration text to the right */
+}
+
 /* Footer */
 .footer {
   padding: 60px 80px;
@@ -178,6 +307,15 @@ Uncomment if needed later
   text-align: center;
   font-size: 16px;
   line-height: 20px;
+}
+
+/* Footer Text */
+.footer__text {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6f6f6f;
 }
 
 .footer__columns {
