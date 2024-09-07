@@ -1,0 +1,114 @@
+/* Header */
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  padding: 30px 80px 40px;
+  position: relative;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  background-image: url(../images/background_header.svg);
+  background-size: cover;
+  align-items: stretch; /* Aligns content to stretch across the width */
+  overflow: hidden; /* Prevents overflow of elements */
+}
+
+.header__image {
+  position: absolute;
+  top: 124px;
+  right: 5px;
+  width: 646px;
+  height: 568px;
+}
+
+/* Highlighted Text "Specialty coffee" */
+.header__highlight {
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 72px;
+  color: #3f96f3;
+}
+
+/* Description Text */
+.header__description {
+  font-family: "Noto Serif", "Time New Roman", serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 28px;
+  max-width: 580px;
+}
+
+/* Main Heading "in the Triple Peaks Library" */
+.header__title {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -0.6px;
+  margin: 183px 0 0;
+  max-width: 729px;
+}
+
+.header__span-accent {
+  color: #3f96f3;
+  display: block; /* Optional: if you want it to take up its line */
+  font-style: italic; /* Apply italic style to the text */
+  font-family: "Noto Serif", "Times New Roman", serif; /* Ensure the correct font family */
+  font-weight: 500; /* Apply the same font weight */
+  font-size: 72px; /* Ensure the same font size */
+  line-height: 72px; /* Ensure the same line height */
+}
+
+.header__footer {
+  display: flex; /* Enables flexbox layout */
+  justify-content: space-between; /* Adjust as necessary */
+  align-items: flex-start; /* Aligns items to the top */
+  padding-top: 20px; /* Adds space above the footer */
+  box-sizing: border-box; /* Includes padding in width calculations */
+  margin-left: 80px; /* Adjust this value to match the alignment of the text above */
+}
+
+/* Header Address */
+.header__address {
+  margin-left: auto; /* Pushes the address to the right side */
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: left;
+  color: #838383;
+}
+
+.header__paragraph {
+  margin: 0; /* Ensures no extra margin is added */
+  padding: 0; /* Ensures no extra padding is added */
+  font-size: 14px; /* Adjust font size if needed */
+  line-height: 1.2; /* Adjust line height for closer spacing */
+}
+
+/* Header Hours */
+.header__hours {
+  margin: 0; /* Removes any default margin */
+  padding: 0; /* Ensures no additional padding */
+  font-size: 14px; /* Font size to match the design */
+  line-height: 1.2; /* Tightens line spacing to make lines closer together */
+  text-align: left; /* Aligns text within its container to the left */
+  color: #555; /* Sets color for the hours text */
+}
+
+.header__hours p {
+  margin: 0; /* Removes any default margin */
+  padding: 0; /* Ensures no additional padding */
+}
+
+.header__info {
+  display: flex;
+  justify-content: space-between; /* Aligns the "Hours" and "Address" sections */
+  align-items: flex-start; /* Aligns text at the top */
+  margin-top: auto; /* Pushes the info section to the bottom of its parent container */
+  width: 100%; /* Full width of the container */
+  padding-top: 20px; /* Adds space above the info */
+  box-sizing: border-box; /* Includes padding in width calculations */
+}

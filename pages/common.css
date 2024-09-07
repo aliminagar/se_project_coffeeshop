@@ -1,0 +1,23 @@
+/* Page Wrapper */
+.page {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* General Utility Classes */
+.no-border {
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}

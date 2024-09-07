@@ -1,0 +1,98 @@
+/* Main Sections */
+.recipes {
+  color: #ffffff; /* Text color set to white */
+  background-color: #0a2750;
+  padding: 100px 80px 215px; /* Background color set to dark blue */
+  text-align: left; /* Align text to the left */
+}
+
+.recipes__videos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recepies__video.caption {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Title Styling */
+.recipes__title {
+  font-family: "Inter", Arial, Helvetica, sans-serif; /* Sets the correct font family */
+  font-style: normal; /* Ensures normal style */
+  font-weight: 500; /* Medium weight */
+  font-size: 44px; /* Sets the font size to 44px */
+  line-height: 52px; /* Line height of 52px */
+  margin: 0 0 24px; /* Margin-bottom 24px, no margin top */
+  max-width: 580px; /* Ensuring the width does not exceed the given limit */
+  text-align: left; /* Aligns text to the left */
+}
+
+/* Subtitle Styling */
+.recipes__subtitle {
+  font-family: "Noto Serif", serif; /* Sets the correct font family */
+  font-style: normal; /* Normal style */
+  font-weight: normal; /* Normal weight */
+  font-size: 20px; /* Sets the font size to 20px */
+  line-height: 30px; /* Line height of 30px */
+  max-width: 580px; /* Ensures the subtitle doesn't exceed this width */
+  margin: 0 0 80px; /* Margin-bottom 80px */
+  text-align: left; /* Aligns text to the left */
+}
+
+/* Styling for Recipes Section, Menu Section, About Section */
+.recipes,
+.reservation,
+.menu,
+.about {
+  padding: 80px 40px; /* Reduced padding for better spacing */
+  text-align: center;
+}
+
+.recipes__title,
+.reservation__title,
+.menu__title,
+.about__title {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.recepies__iframe {
+  width: 480px;
+  height: 273px;
+}
+
+/* Add .no-border styling here */
+.no-border {
+  border: none; /* Removes any border */
+}
+
+/* Video caption styling */
+.recipes__video_caption {
+  display: flex; /* Enables Flexbox layout */
+  justify-content: space-between; /* Aligns the caption text and duration on opposite sides */
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff; /* Keeps the text color white */
+  margin-top: 24px; /* Adds spacing above the caption */
+  width: 100%; /* Matches the video width */
+  max-width: 480px; /* Aligns with video width */
+}
+
+.caption-text {
+  text-align: left; /* Aligns the recipe text to the left */
+}
+
+.caption-time {
+  text-align: right; /* Aligns the duration text to the right */
+}
