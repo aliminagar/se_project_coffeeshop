@@ -36,10 +36,13 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  transition: opacity 0.3s ease; /* Opacity transition added */
+  opacity: 1; /* Default opacity */
 }
 
 .nav__link:hover {
   color: #d35722; /* Hover effect color */
+  opacity: 0.5; /* Change opacity to 50% on hover */
 }
 
 /* Styles for the entire navigation bar */
