@@ -1,5 +1,5 @@
 @import url("../vendor/normalize.css");
-@import url("./common.css");
+@import url("./page.css");
 @import url("./header.css");
 @import url("./nav.css");
 @import url("./recipes.css");
@@ -8,3 +8,4 @@
 @import url("./form.css");
 @import url("./footer.css");
 @import url("./about.css");
+@import url("./card.css");

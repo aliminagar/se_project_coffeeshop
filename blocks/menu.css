@@ -2,7 +2,6 @@
 .menu {
   padding: 100px 0; /* Keep the padding */
   text-align: center;
-  max-width: 1200px; /* Keep max-width for centering */
   margin: 0 auto; /* Center the entire menu section */
   background-image: url("../images/background_menu.svg"); /* Path to your background image */
   background-repeat: no-repeat;
@@ -41,42 +40,4 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
-}
-
-.card {
-  width: 540px; /* This width ensures that the columns have proper width */
-  text-align: left; /* Aligns the text within the cards properly */
-}
-
-.card__title {
-  font-family: "Inter", sans-serif; /* Added */
-  font-style: normal; /* Added */
-  font-weight: bold; /* Updated */
-  font-size: 20px; /* Updated */
-  line-height: 30px; /* Added */
-  margin: 0 0 32px;
-  margin-bottom: 16px;
-}
-
-.card__list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.card__list-item {
-  display: flex;
-  font-family: "Noto Serif", serif; /* Added */
-  font-style: normal; /* Added */
-  font-weight: normal; /* Added */
-  font-size: 16px; /* Updated */
-  line-height: 20px; /* Added */
-}
-
-.card__list-divider {
-  border-bottom: 1px solid black;
-  flex-grow: 1;
 }

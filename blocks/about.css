@@ -1,0 +1,82 @@
+/* About Section */
+.about {
+  background-color: #0a2850; /* Set the background color */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.about__content {
+  font-family: "Inter", Arial, sans-serif;
+  max-width: 660px;
+  /* border: yellow 1px solid; */ /* Optional for visual layout debugging */
+  padding: 119px 80px 173px 0; /* Top, Right, Bottom, Left padding */
+  margin-left: auto; /* Centers the content */
+}
+
+.about__title-container {
+  display: flex;
+  justify-content: flex-start; /* Aligns the title horizontally */
+  flex-direction: column; /* Keeps content vertically aligned */
+  margin: 100px 0 0 80px;
+}
+
+.about__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 44px; /* Font size */
+  color: white;
+  max-width: 251px; /* Max width for the text */
+  line-height: 52px; /* Line height */
+  display: block;
+  margin: 0; /* Resets the default bottom margin */
+  text-align: left; /* Keeps the text aligned to the left */
+}
+.about__circle {
+  border-radius: 50%;
+  background-color: #2f80ed;
+  width: 426px;
+  height: 426px;
+  position: absolute;
+  top: -152px;
+  left: -129px;
+  z-index: 0;
+}
+
+.about__circle_animation_blurred {
+  animation: pulsate 1s ease-in-out infinite alternate;
+  position: absolute;
+}
+
+@keyframes pulsate {
+  0% {
+    opacity: 0; /* Invisible at the start */
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    opacity: 0.6; /* Slightly visible at 50% */
+    transform: scale(1.5); /* Grows to 150% size */
+  }
+  100% {
+    opacity: 0; /* Invisible again */
+    transform: scale(1); /* Back to normal size */
+  }
+}
+
+.about__paragraph {
+  font-family: "Noto Serif", serif; /* Correct font-family */
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  margin: 0 0 20px 0; /* Reset top margin, and set 20px bottom margin */
+  text-align: left; /* Ensure paragraphs are left-aligned */
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0; /* Remove bottom margin for the last paragraph */
+}

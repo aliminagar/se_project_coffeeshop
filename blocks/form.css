@@ -37,7 +37,7 @@
   font-size: 16px; /* Button font size */
   line-height: 20px; /* Button line height */
   margin-bottom: 32px;
-  margin-top: 10px; /* Space above button */
+  margin-top: 20px; /* Space above button */
   padding: 20px 0;
   transition: background-color 0.3s ease;
 }
@@ -46,7 +46,7 @@
   background-color: #3f96f3; /* Hover state color */
 }
 
-/* Checkbox and label styles */
+/* Common label styles */
 .form__label {
   display: flex;
   align-items: center; /* Align checkbox and text */
@@ -59,35 +59,17 @@
   color: #000; /* Main font color */
   margin: 0 0 8px 0; /* Margin around label */
 }
-
-/* Styles for the checkbox */
-.form__input--checkbox {
-  margin: 0 8px 0 0; /* Adjust spacing: right margin to 8px, remove top/bottom margin */
-  border-radius: 2px; /* Rounded corners for checkbox */
-  vertical-align: middle; /* Align checkbox with the text vertically */
-  width: 16px; /* Set width of the checkbox */
-  height: 16px; /* Set height of the checkbox */
-  cursor: pointer; /* Cursor to indicate checkbox is clickable */
-  appearance: checkbox; /* Use browser default checkbox appearance */
+/* Specific styles for checkbox label (modifier) */
+/* Flex container to align checkbox and label in a row */
+.form__label_type_checkbox {
+  display: flex;
+  align-items: center; /* Vertically align the checkbox and label */
+  gap: 8px; /* Optional: adds space between the checkbox and the label */
 }
 
-/* Checkbox label styles */
-.checkbox-container .form__label {
-  font-family: Inter, sans-serif; /* Font family */
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000; /* Main font color */
-  display: inline-block; /* Inline block to align with the checkbox */
-  margin: 0; /* Remove any default margin for better alignment */
-  cursor: pointer; /* Cursor to indicate label is clickable */
-}
-
-/* Container for the checkbox and label to center them below the button */
-.checkbox-container {
-  display: flex; /* Flexbox to align items */
-  align-items: center; /* Vertically center the checkbox and label */
-  justify-content: center; /* Center the container content horizontally */
-  margin-top: 12px; /* Add some spacing above the checkbox area */
+/* Adjust the checkbox size and margin */
+.form__checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px; /* Space between checkbox and label */
 }
