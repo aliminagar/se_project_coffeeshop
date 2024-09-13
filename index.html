@@ -26,17 +26,8 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./pages/index.css" />
-    <!-- Component-specific Stylesheets (from blocks folder) -->
-    <link rel="stylesheet" href="./blocks/common.css" />
-    <link rel="stylesheet" href="./blocks/header.css" />
-    <link rel="stylesheet" href="./blocks/nav.css" />
-    <link rel="stylesheet" href="./blocks/recipes.css" />
-    <link rel="stylesheet" href="./blocks/menu.css" />
-    <link rel="stylesheet" href="./blocks/form.css" />
-    <link rel="stylesheet" href="./blocks/footer.css" />
-    <link rel="stylesheet" href="./blocks/reservation.css" />
-    <link rel="stylesheet" href="./blocks/about.css" />
-    <link rel="stylesheet" href="./blocks/card.css">
+    <!-- Only index.css is linked here -->
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- Google Fonts -->
     <link
@@ -54,21 +45,22 @@
             alt="Coffeeshop Logo"
             class="nav__logo"
           />
-          <ul class="nav__links">
+          <ol class="nav__links">
             <li>
-              <a href="#recipes" class="nav__link">Recipes</a>
+              <a class="nav__link" href="#recipes-section">Recipes</a>
             </li>
             <li>
-              <a href="#book-table" class="nav__link">Book a table</a>
+              <a class="nav__link" href="#reservation-section">Book a table</a>
             </li>
             <li>
-              <a href="#menu" class="nav__link">Menu</a>
+              <a class="nav__link" href="#menu-section">Menu</a>
             </li>
             <li>
-              <a href="#contacts" class="nav__link">Contacts</a>
+              <a class="nav__link" href="#about-section">Contacts</a>
             </li>
-          </ul>
+          </ol>
         </nav>
+
         <!-- Main Title and Description -->
         <h1 class="header__title">
           <span class="header__span-accent">Specialty coffee</span> in the
@@ -85,22 +77,19 @@
           alt="Coffesshop illustration 'Inside the library'"
           class="header__image"
         />
-      </header>
 
-      <!-- Business Information with Hours and Address -->
-      <div class="header__footer">
-        <div>
-          <p class="header__paragraph">Hours:</p>
-          <p class="header__paragraph">Monday – Friday (10:00 – 18:00)</p>
-          <p class="header__paragraph">Saturday – Sunday (11:00 – 18:00)</p>
+        <!-- Business Information with Hours and Address (moved inside header) -->
+        <div class="header__footer">
+          <div>
+            <p class="header__paragraph">Hours:</p>
+            <p class="header__paragraph">Monday – Friday (10:00 – 18:00)</p>
+            <p class="header__paragraph">Saturday – Sunday (11:00 – 18:00)</p>
+          </div>
+          <p class="header__paragraph">
+            200 Success Avenue, The Town of Triple Peaks
+          </p>
         </div>
-        <p class="header__paragraph">
-          200 Success Avenue, The Town of Triple Peaks
-        </p>
-      </div>
-    </div>
-  </body>
-
+      </header>
       <!-- Header Section Ends Here -->
       <!-- Main Content Starts Here -->
       <main class="content">
@@ -108,7 +97,8 @@
         <section id="recipes" class="recipes">
           <h2 class="recipes__title">Recipes</h2>
           <p class="recipes__subtitle">
-            Check out some recipes we've collected for your home-brewing convenience:
+            Check out some recipes we've collected for your home-brewing
+            convenience:
           </p>
           <!-- Video list here -->
           <div class="recipes__videos">
@@ -190,10 +180,14 @@
 
             <button class="form__button">Book a table</button>
             <!-- Wrap checkbox and label in a container div for proper alignment -->
-            <!-- Remove the extra div wrapper -->
             <!-- Corrected checkbox and label code -->
             <label class="form__label form__label_type_checkbox" for="terms">
-              <input class="form__checkbox" type="checkbox" id="terms" required />
+              <input
+                class="form__checkbox"
+                type="checkbox"
+                id="terms"
+                required
+              />
               I agree with the terms of use
             </label>
           </form>
@@ -300,12 +294,8 @@
           </ul>
         </section>
         <!-- About Section -->
-        <!-- About Section -->
-        <section class="about" style="background-color: #0a2850">
-          <div class="about__title-container">
-            <h2 class="about__title">About the coffee shop</h2>
-          </div>
-
+        <section class="about">
+          <h2 class="about__title">About the coffee shop</h2>
           <div class="about__content">
             <p class="about__paragraph">
               Our coffee shop is located in the Triple Peaks Library. It
@@ -325,8 +315,8 @@
           <div class="about__circle about__circle_animation_blurred"></div>
         </section>
       </main>
-      <!-- Closing the main content -->
       <!-- Main Content Ends Here -->
+
       <!-- Footer Section -->
       <footer class="footer" id="contacts">
         <div class="footer__columns">
@@ -337,7 +327,6 @@
               class="footer__logo"
             />
           </div>
-          <!-- Missing closing div added here -->
           <div class="footer__column footer__column_content_social">
             <h3 class="footer__column-heading">Social media</h3>
             <ul class="footer__list">
@@ -367,5 +356,6 @@
         <p class="footer__copyright">&copy; 2024 Alireza Minagar</p>
       </footer>
     </div>
+    <!-- Closing .page div -->
   </body>
 </html>

@@ -6,7 +6,7 @@
 
 /* Fieldset styles to remove default browser styling */
 .form__fieldset {
-  margin: 0;
+  margin-bottom: 32px;
   padding: 0;
   border: none;
 }
@@ -15,13 +15,15 @@
 .form__input {
   width: 100%;
   padding: 15px 20px;
-  margin: 8px 0 32px; /* Space between inputs */
+  margin-bottom: 8px; /* Adds 8px space between placeholder and next element */
   border: 1px solid #838383; /* Border color */
   border-radius: 4px; /* Rounded corners */
-  font-family: Inter, sans-serif; /* Font family */
-  font-size: 16px; /* Input font size */
-  line-height: 20px; /* Input line height */
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 20px; /* Input font size */
+  line-height: 30px; /* Input line height */
   box-sizing: border-box; /* Include padding and border in element's total width and height */
+  font-style: normal;
+  font-weight: normal;
 }
 
 .form__button {
@@ -31,13 +33,13 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-family: Inter, sans-serif; /* Font family */
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px; /* Button font size */
   line-height: 20px; /* Button line height */
   margin-bottom: 32px;
-  margin-top: 20px; /* Space above button */
+  margin-top: 24px; /* Space above button */
   padding: 20px 0;
   transition: background-color 0.3s ease;
 }
@@ -51,7 +53,7 @@
   display: flex;
   align-items: center; /* Align checkbox and text */
   gap: 12px;
-  font-family: Inter, sans-serif; /* Font family */
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px; /* Label font size */
@@ -59,12 +61,14 @@
   color: #000; /* Main font color */
   margin: 0 0 8px 0; /* Margin around label */
 }
+
 /* Specific styles for checkbox label (modifier) */
 /* Flex container to align checkbox and label in a row */
 .form__label_type_checkbox {
   display: flex;
   align-items: center; /* Vertically align the checkbox and label */
   gap: 8px; /* Optional: adds space between the checkbox and the label */
+  margin-bottom: 0; /* Remove the bottom margin for the checkbox label */
 }
 
 /* Adjust the checkbox size and margin */

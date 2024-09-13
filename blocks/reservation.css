@@ -10,15 +10,14 @@
 }
 
 /* Main title styling */
-.reservation__title {
-  font-family: Inter, sans-serif; /* Font family */
-  font-style: normal;
-  font-weight: 500;
-  font-size: 44px; /* Title font size */
-  line-height: 52px; /* Title line height */
-  text-align: center; /* Center align text */
-  padding: 100px 0px 80px 0;
-  color: #000; /* Title color */
+/* Style for the form heading */
+.reservation_title {
+  text-align: center; /* Center the text */
+  font-family: "Inter", "Arial", sans-serif; /* Use the same font as the form */
+  font-size: 32px; /* Adjust the font size */
+  line-height: 40px; /* Adjust line height for better spacing */
+  margin-top: 100px; /* Ensure the heading has the correct spacing from the top */
+  margin-bottom: 80px; /* Ensure spacing between the heading and the form */
 }
 
 .reservation__form {

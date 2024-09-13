@@ -35,6 +35,7 @@
   line-height: 20px;
   transition: opacity 0.3s ease; /* Opacity transition added */
   opacity: 1; /* Default opacity */
+  color: #000000;
 }
 
 .nav__link:hover {

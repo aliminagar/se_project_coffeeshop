@@ -3,27 +3,17 @@
   background-color: #0a2850; /* Set the background color */
   color: #fff;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
   z-index: 1;
+  padding: 100px 80px 173px;
 }
 
 .about__content {
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   max-width: 660px;
-  /* border: yellow 1px solid; */ /* Optional for visual layout debugging */
-  padding: 119px 80px 173px 0; /* Top, Right, Bottom, Left padding */
-  margin-left: auto; /* Centers the content */
-}
-
-.about__title-container {
-  display: flex;
-  justify-content: flex-start; /* Aligns the title horizontally */
-  flex-direction: column; /* Keeps content vertically aligned */
-  margin: 100px 0 0 80px;
 }
 
 .about__title {
@@ -36,6 +26,7 @@
   display: block;
   margin: 0; /* Resets the default bottom margin */
   text-align: left; /* Keeps the text aligned to the left */
+  z-index: 2;
 }
 .about__circle {
   border-radius: 50%;

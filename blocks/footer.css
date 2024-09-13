@@ -17,7 +17,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 108px; /* Add this margin to create space between the columns and the copyright section */
+  margin-bottom: 60px; /* Add this margin to create space between the columns and the copyright section */
 }
 
 /* Aligning the second column (social links) to the right */
@@ -28,12 +28,10 @@
 .footer__logo {
   width: 105px;
   height: 39px;
-  margin-left: 80px; /* This adds the 80px space on the left */
-  margin-top: 60px; /* This adds the 60px space from the top */
 }
 
 .footer__column-heading {
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -52,17 +50,16 @@
   display: flex;
   align-items: center;
   margin-bottom: 16px; /* Correct vertical space between social media items */
-  gap: 10px;
 }
 
-.footer__list-item:last-child {
-  padding: 0;
+.footer__list-item:last-of-type {
+  margin-bottom: 0;
 }
 
 /* Add the font styles for anchor tags (links) inside .footer__list-item */
 /* Add the font styles for links inside .footer__list-item */
 .footer__link {
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal; /* Normal style */
   font-weight: normal; /* Normal weight */
   font-size: 16px; /* Set font size to 16px */
@@ -107,11 +104,11 @@
 }
 
 .footer__copyright {
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
-  margin: 108px 0 0; /* Reset default margins */
-  padding-top: 48px; /* Adjusted padding to ensure the total gap is 108px */
-  font-size: 16px; /* Correct font size based on feedback */
-  line-height: 20px; /* Set the line height as required */
+  margin: 0; /* Remove the extra margin on top */
+  padding-top: 48px; /* Keep the padding to 48px */
+  font-size: 16px;
+  line-height: 20px;
 }

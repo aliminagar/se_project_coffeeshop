@@ -33,7 +33,7 @@
 
 /* Title Styling */
 .recipes__title {
-  font-family: "Inter", Arial, Helvetica, sans-serif; /* Sets the correct font family */
+  font-family: "Inter", "Arial", Helvetica, sans-serif; /* Sets the correct font family */
   font-style: normal; /* Ensures normal style */
   font-weight: 500; /* Medium weight */
   font-size: 44px; /* Sets the font size to 44px */
@@ -50,16 +50,16 @@
   font-weight: normal; /* Normal weight */
   font-size: 20px; /* Sets the font size to 20px */
   line-height: 30px; /* Line height of 30px */
-  max-width: 580px; /* Ensures the subtitle doesn't exceed this width */
+  max-width: 438px; /* Ensures the subtitle doesn't exceed this width */
   margin: 0 0 80px; /* Margin-bottom 80px */
   text-align: left; /* Aligns text to the left */
 }
 
 /* Styling for Recipes Section, Menu Section, About Section */
-.reservation,
+/* .reservation,
 .menu,
 .about {
-  padding: 80px 40px; /* Reduced padding for better spacing */
+  padding: 80px 40px;
   text-align: center;
 }
 
@@ -69,7 +69,7 @@
   font-size: 36px;
   font-weight: 500;
   margin-bottom: 20px;
-}
+} */
 
 .recipes__iframe {
   width: 480px;
@@ -84,7 +84,7 @@
 
 /* Video caption styling */
 .recipes__video-caption {
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-size: 20px;
   font-weight: 500;

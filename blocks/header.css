@@ -24,12 +24,14 @@
 }
 /* Description Text */
 .header__description {
-  font-family: "Noto Serif", "Time New Roman", serif;
+  font-family: "Noto Serif", "Times New Roman", serif;
   font-size: 20px;
   line-height: 30px;
   margin-top: 28px;
   max-width: 580px;
   margin-bottom: 0;
+  font-style: normal;
+  font-weight: normal;
 }
 
 /* Main Heading "in the Triple Peaks Library" */
@@ -47,24 +49,26 @@
   color: #3f96f3;
   display: block; /* Optional: if you want it to take up its line */
   font-style: italic; /* Apply italic style to the text */
-  font-family: "Noto Serif", "Times New Roman", serif; /* Ensure the correct font family */
-  font-weight: 500; /* Apply the same font weight */
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-weight: normal; /* Apply the same font weight */
   font-size: 60px; /* Ensure the same font size */
   line-height: 72px; /* Ensure the same line height */
 }
 
 .header__footer {
-  display: flex; /* Enables flexbox layout */
-  justify-content: space-between; /* Adjust as necessary */
-  align-items: flex-start; /* Aligns items to the top */
-  padding-top: 20px; /* Adds space above the footer */
-  box-sizing: border-box; /* Includes padding in width calculations */
-  margin-left: 80px; /* Adjust this value to match the alignment of the text above */
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6f6f6f;
+  align-items: end;
 }
 
 .header__paragraph {
-  margin: 0; /* Ensures no extra margin is added */
-  padding: 0; /* Ensures no extra padding is added */
-  font-size: 14px; /* Adjust font size if needed */
-  line-height: 1.2; /* Adjust line height for closer spacing */
+  margin: 0;
+  color: #838383;
 }
