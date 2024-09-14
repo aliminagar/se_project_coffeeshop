@@ -6,16 +6,14 @@
   width: 100%;
 }
 
-/* Navigation Logo */
 .nav__logo {
   display: flex;
-  left: -50px; /* Existing property, kept unchanged */
-  /* Additional properties to match the design */
   height: 39px; /* Sets the height as per the design */
   width: 105px; /* Sets the width as per the design */
-  margin-top: 30px; /* Adds space above the logo */
-  margin-left: 30px; /* Adds space to the left of the logo */
   filter: brightness(0) invert(0); /* Ensures the logo color is black */
+  left: -50px; /* Sets fixed 30px space from the left */
+  /* Sets fixed 30px space from the top */
+  position: relative; /* Keep this if you need further positioning adjustments */
 }
 
 /* Navigation Links */
@@ -27,7 +25,6 @@
   padding: 0;
 }
 
-/* Navigation Links */
 .nav__link {
   font-family: "Inter", Arial, sans-serif;
   font-weight: 500;
@@ -36,33 +33,10 @@
   transition: opacity 0.3s ease; /* Opacity transition added */
   opacity: 1; /* Default opacity */
   color: #000000;
+  text-decoration: none; /* Removes the underline from the links */
 }
 
 .nav__link:hover {
   color: #2f80ed; /* Hover effect color */
   opacity: 0.5; /* Change opacity to 50% on hover */
-}
-
-/* Styles for the entire navigation bar */
-.nav-menu {
-  display: flex; /* Align items horizontally */
-  justify-content: flex-start; /* Align items to the left */
-  align-items: center; /* Vertically center the items */
-  margin-top: 30px;
-  margin-right: 30px;
-  height: 124px; /* Total height to match the design */
-  background-color: #f8f9fa; /* Optional: background color */
-}
-
-/* Styles for each individual navigation item */
-.nav-menu-item {
-  margin-right: 20px; /* Space between each item */
-  list-style-type: none; /* Remove bullet points */
-}
-
-/* Optional: Style anchor tags inside navigation items */
-.nav-menu-item a {
-  text-decoration: none; /* Remove underline from links */
-  color: #333; /* Set color */
-  font-weight: bold; /* Optional: make the text bold */
 }

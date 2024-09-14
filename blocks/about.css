@@ -17,7 +17,7 @@
 }
 
 .about__title {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 500;
   font-size: 44px; /* Font size */
   color: white;
@@ -41,26 +41,23 @@
 
 .about__circle_animation_blurred {
   animation: pulsate 1s ease-in-out infinite alternate;
-  position: absolute;
 }
 
 @keyframes pulsate {
   0% {
-    opacity: 0; /* Invisible at the start */
-    transform: scale(1); /* Normal size */
+    opacity: 0;
   }
   50% {
-    opacity: 0.6; /* Slightly visible at 50% */
-    transform: scale(1.5); /* Grows to 150% size */
+    opacity: 0.6;
   }
   100% {
-    opacity: 0; /* Invisible again */
-    transform: scale(1); /* Back to normal size */
+    transform: scale(1.2);
+    opacity: 0;
   }
 }
 
 .about__paragraph {
-  font-family: "Noto Serif", serif; /* Correct font-family */
+  font-family: "Noto Serif", "Times New Roman", serif; /* Correct font-family */
   font-size: 20px;
   line-height: 30px;
   color: #fff;

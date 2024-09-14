@@ -45,7 +45,7 @@
 
 /* Subtitle Styling */
 .recipes__subtitle {
-  font-family: "Noto Serif", serif; /* Sets the correct font family */
+  font-family: "Noto Serif", "Times New Roman", serif; /* Sets the correct font family */
   font-style: normal; /* Normal style */
   font-weight: normal; /* Normal weight */
   font-size: 20px; /* Sets the font size to 20px */
@@ -77,11 +77,6 @@
   border: none;
 }
 
-/* Add .no-border styling here */
-.no-border {
-  border: none; /* Removes any border */
-}
-
 /* Video caption styling */
 .recipes__video-caption {
   font-family: "Inter", "Arial", sans-serif;
@@ -94,12 +89,4 @@
   display: flex;
   align-self: flex-end;
   justify-content: space-between;
-}
-
-.caption-text {
-  text-align: left; /* Aligns the recipe text to the left */
-}
-
-.caption-time {
-  text-align: right; /* Aligns the duration text to the right */
 }

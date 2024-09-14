@@ -4,13 +4,12 @@
 }
 
 .card__title {
-  font-family: "Inter", sans-serif; /* Added */
+  font-family: "Inter", Arial, sans-serif; /* Added */
   font-style: normal; /* Added */
   font-weight: bold; /* Updated */
   font-size: 20px; /* Updated */
   line-height: 30px; /* Added */
   margin: 0 0 32px;
-  margin-bottom: 16px;
 }
 
 .card__list {
@@ -24,11 +23,12 @@
 
 .card__list-item {
   display: flex;
-  font-family: "Noto Serif", serif; /* Added */
+  font-family: "Noto Serif", "Times New Roman", serif; /* Added */
   font-style: normal; /* Added */
   font-weight: normal; /* Added */
   font-size: 16px; /* Updated */
   line-height: 20px; /* Added */
+  gap: 10px;
 }
 
 .card__list-divider {

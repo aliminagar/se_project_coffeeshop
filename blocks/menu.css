@@ -25,7 +25,7 @@
   max-width: 780px; /* Adjusted max-width to match the reference */
   line-height: 1.5; /* This will add spacing between the lines */
   margin: 0 auto 100px; /* Center the text and maintain the bottom margin */
-  font-family: "Noto Serif", serif; /* Added */
+  font-family: "Noto Serif", "Times New Roman", serif; /* Added */
   font-style: normal; /* Added */
   font-weight: normal; /* Added */
   font-size: 20px; /* Updated */

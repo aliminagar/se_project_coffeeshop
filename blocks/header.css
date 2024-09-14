@@ -13,6 +13,7 @@
   background-position: center;
   background-color: #ffffff;
   background-repeat: no-repeat;
+  z-index: 0;
 }
 
 .header__image {
@@ -21,6 +22,7 @@
   right: 5px;
   width: 646px;
   height: 568px;
+  z-index: -1;
 }
 /* Description Text */
 .header__description {
@@ -32,6 +34,8 @@
   margin-bottom: 0;
   font-style: normal;
   font-weight: normal;
+  z-index: 2;
+  max-width: 683px;
 }
 
 /* Main Heading "in the Triple Peaks Library" */
@@ -43,16 +47,20 @@
   letter-spacing: -0.6px;
   margin: 183px 0 0;
   max-width: 729px;
+  z-index: 2; /* Keep the 80px left margin for the whole title */
+  text-align: left; /* Ensure text is left-aligned */
 }
 
+/* Span for "Specialty coffee" */
 .header__span-accent {
   color: #3f96f3;
-  display: block; /* Optional: if you want it to take up its line */
-  font-style: italic; /* Apply italic style to the text */
+  font-style: italic; /* Italic style */
   font-family: "Noto Serif", "Times New Roman", serif;
-  font-weight: normal; /* Apply the same font weight */
-  font-size: 60px; /* Ensure the same font size */
+  font-weight: normal;
+  font-size: 60px; /* Match font size with the rest of the heading */
   line-height: 72px; /* Ensure the same line height */
+  margin-left: 0; /* No additional margin needed here */
+  display: inline; /* Keep the span inline so it aligns with the rest */
 }
 
 .header__footer {
@@ -65,7 +73,8 @@
   font-size: 16px;
   line-height: 20px;
   color: #6f6f6f;
-  align-items: end;
+  align-items: end; /* Align the block with 80px left margin */
+  margin-bottom: 40px; /* Provide 40px space below the block */
 }
 
 .header__paragraph {

@@ -1,21 +1,26 @@
 .form {
+  display: flex;
+  flex-direction: column;
   max-width: 385px;
-  margin: 0 auto; /* Center the form */
-  padding: 0; /* Remove default padding */
+  width: 100%;
 }
 
-/* Fieldset styles to remove default browser styling */
 .form__fieldset {
-  margin-bottom: 32px;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   border: none;
+  padding: 0;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* Input styles */
 .form__input {
   width: 100%;
   padding: 15px 20px;
-  margin-bottom: 8px; /* Adds 8px space between placeholder and next element */
+  margin-bottom: 32px; /* Adds 8px space between placeholder and next element */
   border: 1px solid #838383; /* Border color */
   border-radius: 4px; /* Rounded corners */
   font-family: "Inter", "Arial", sans-serif;
@@ -39,19 +44,21 @@
   font-size: 16px; /* Button font size */
   line-height: 20px; /* Button line height */
   margin-bottom: 32px;
-  margin-top: 24px; /* Space above button */
+  margin-top: 0; /* Space above button */
   padding: 20px 0;
   transition: background-color 0.3s ease;
 }
 
 .form__button:hover {
   background-color: #3f96f3; /* Hover state color */
+  opacity: 70%;
 }
 
 /* Common label styles */
 .form__label {
   display: flex;
   align-items: center; /* Align checkbox and text */
+  justify-content: center;
   gap: 12px;
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
@@ -65,8 +72,6 @@
 /* Specific styles for checkbox label (modifier) */
 /* Flex container to align checkbox and label in a row */
 .form__label_type_checkbox {
-  display: flex;
-  align-items: center; /* Vertically align the checkbox and label */
   gap: 8px; /* Optional: adds space between the checkbox and the label */
   margin-bottom: 0; /* Remove the bottom margin for the checkbox label */
 }
@@ -75,5 +80,6 @@
 .form__checkbox {
   width: 20px;
   height: 20px;
-  margin-right: 8px; /* Space between checkbox and label */
+  margin-right: 12px; /* Space between checkbox and label */
+  border-radius: 2px;
 }
