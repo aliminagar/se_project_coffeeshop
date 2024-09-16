@@ -11,7 +11,6 @@
   background-size: cover;
   align-items: stretch; /* Aligns content to stretch across the width */
   background-position: center;
-  background-color: #ffffff;
   background-repeat: no-repeat;
   z-index: 0;
 }
@@ -30,7 +29,6 @@
   font-size: 20px;
   line-height: 30px;
   margin-top: 28px;
-  max-width: 580px;
   margin-bottom: 0;
   font-style: normal;
   font-weight: normal;
@@ -60,7 +58,7 @@
   font-size: 60px; /* Match font size with the rest of the heading */
   line-height: 72px; /* Ensure the same line height */
   margin-left: 0; /* No additional margin needed here */
-  display: inline; /* Keep the span inline so it aligns with the rest */
+  display: block; /* Keep the span inline so it aligns with the rest */
 }
 
 .header__footer {
@@ -74,7 +72,7 @@
   line-height: 20px;
   color: #6f6f6f;
   align-items: end; /* Align the block with 80px left margin */
-  margin-bottom: 40px; /* Provide 40px space below the block */
+  margin-bottom: 0; /* Removed extra bottom margin */
 }
 
 .header__paragraph {
